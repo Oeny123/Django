@@ -3,7 +3,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def Home(request):
-    return HttpResponse('Home Page')
+    return render(request, 'home.html')
 
 def Room(request):
-    return HttpResponse('room')
+    return render(request, 'room.html')
