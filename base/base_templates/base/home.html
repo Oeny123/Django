@@ -9,8 +9,16 @@
     {% extends 'main.html' %}
 
     {% block content %}
-        <h1>Home Page</h1>
+        <h1>Home PAge</h1>
+        <div>
+        {% for room in rooms %}
+            <p>{{room.id}} -- {{room.name}}</p>
+            <a href="{% url 'ROOM' room.id %}"><button>Enter Room</button></a>
+                <hr>
+        {% endfor %}
+    </div>
     {% endblock %}
+
 
 </body>
 </html>
