@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Room
+
 
 rooms = [
     {'id': 1, 'name': 'Flask! Backend'},
